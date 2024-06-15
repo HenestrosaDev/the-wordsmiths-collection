@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import { trans } from "laravel-vue-i18n";
 import * as pdfjsLib from "pdfjs-dist/build/pdf";
 import * as pdfjsWorker from "pdfjs-dist/build/pdf.worker.mjs";
@@ -54,6 +54,10 @@ onMounted(() => {
 	addArrowKeysListener();
 });
 
+onUnmounted(() => {
+	removeArrowKeysListener();
+});
+
 const configurePdfjsWorker = () => {
 	pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 };
@@ -78,6 +82,10 @@ const addArrowKeysListener = () => {
 			goToPreviousPage();
 		}
 	});
+};
+
+const removeArrowKeysListener = () => {
+	document.removeEventListener("keydown", addArrowKeysListener);
 };
 
 // Render functions
