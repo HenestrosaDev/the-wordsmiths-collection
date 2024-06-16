@@ -271,7 +271,7 @@ const getDistance = (touch1, touch2) => {
 				<li class="flex grow basis-0 items-center">
 					<button @click="emit('close')">
 						<IconXCircleFilled
-							class="h-6 w-6 fill-skin-white hover:fill-skin-danger sm:h-7 sm:w-7"
+							class="h-7 w-7 fill-skin-white hover:fill-skin-danger"
 							aria-hidden="true"
 						/>
 					</button>
