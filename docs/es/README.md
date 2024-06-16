@@ -66,7 +66,7 @@
     </a>
   </p>
   <p>
-    🇬🇧 English | <a href="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/es/README.md/">🇪🇸 Español</a>
+    <a href="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/README.md/">🇪🇸 Español</a>🇬🇧 English</a> | 🇪🇸 Español
   </p>
 </div>
 
@@ -104,7 +104,7 @@ Hay dos planes de suscripción:
 
 El sitio web tiene tres tipos de usuarios:
 
-- **Visitante no suscrito**: No puede leer libros, pero puede ver la biblioteca disponible y las reseñas.
+- **Visitante no suscrito**: No puede leer libros ni escribir reseñas, pero puede ver la biblioteca disponible y las reseñas publicadas.
 - **Suscriptor**: Usuario registrado que paga una cuota mensual/anual para leer libros. Puede ser **Básico** o **Premium**.
 - **Administrador**: Usuario que tiene todas las características de un suscriptor, además de la capacidad de añadir, editar y eliminar libros, géneros, y autores. También puede editar y eliminar usuarios, y borrar reseñas.
 

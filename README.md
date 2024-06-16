@@ -104,7 +104,7 @@ There are two subscription plans:
 
 The website has three types of users:
 
-- **Non-subscriber visitor**: Cannot read books, but can see the available library and reviews.
+- **Non-subscriber visitor**: Cannot read books or write reviews, but can see the available library and posted reviews.
 - **Subscriber**: Registered user who pays a monthly/annual fee to read books. Can be **Basic** or **Premium**.
 - **Administrator**: A user who has all the features of a subscriber plus the ability to add, edit, and delete books, genres, and authors. They can also edit and delete users, and delete reviews.
 
