@@ -215,6 +215,8 @@
 	"pdf_reader.next_page": "Página siguiente",
 	"pdf_reader.previous_page": "Página anterior",
 	"pdf_reader.unsupported_canvas": "Tu navegador no soporta la etiqueta HTML canvas",
+	"pdf_reader.zoom_in": "Ampliar zoom",
+	"pdf_reader.zoom_out": "Reducir zoom",
 	"pricing_card.basic.description": "Descubre un mundo de conocimientos con nuestro plan Basic, que te dará acceso a una amplia biblioteca de obras literarias esenciales.",
 	"pricing_card.basic.title": "Basic",
 	"pricing_card.premium.description": "Acceso exclusivo a una cuidada colección de libros Premium que ofrecen una profundidad de conocimiento y entretenimiento sin igual.",
