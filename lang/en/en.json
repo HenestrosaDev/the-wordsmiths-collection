@@ -215,6 +215,8 @@
 	"pdf_reader.next_page": "Next page",
 	"pdf_reader.previous_page": "Previous page",
 	"pdf_reader.unsupported_canvas": "Your browser does not support the HTML canvas tag",
+	"pdf_reader.zoom_in": "Zoom in",
+	"pdf_reader.zoom_out": "Zoom out",
 	"pricing_card.basic.description": "Unlock a world of knowledge with our Basic plan, which gives you access to a vast library of essential literary works.",
 	"pricing_card.basic.title": "Basic",
 	"pricing_card.premium.description": "Exclusive access to a curated collection of Premium books that offer unparalleled depth of knowledge and entertainment.",

@@ -319,10 +319,11 @@ const getDistance = (touch1, touch2) => {
 				<li
 					class="flex basis-0 items-center justify-end space-x-1 xs:grow xs:space-x-2"
 				>
-					<IconZoomOut
-						class="h-7 w-7 cursor-pointer"
-						@click="changeZoom(zoomValue - scaleFactor * 100)"
-					/>
+					<button @click="changeZoom(zoomValue - scaleFactor * 100)">
+						<IconZoomOut class="h-7 w-7" />
+						<span class="sr-only">{{ trans("pdf_reader.zoom_out") }}</span>
+					</button>
+
 					<span
 						ref="$zoomSpan"
 						class="py-2.5 text-sm"
@@ -341,10 +342,11 @@ const getDistance = (touch1, touch2) => {
 						@focusin="isZoomInputFocus = true"
 						@focusout="isZoomInputFocus = false"
 					/>
-					<IconZoomIn
-						class="h-7 w-7 cursor-pointer"
-						@click="changeZoom(zoomValue + scaleFactor * 100)"
-					/>
+
+					<button @click="changeZoom(zoomValue + scaleFactor * 100)">
+						<IconZoomIn class="h-7 w-7" />
+						<span class="sr-only">{{ trans("pdf_reader.zoom_in") }}</span>
+					</button>
 				</li>
 			</ul>
 		</footer>
