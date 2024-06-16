@@ -6,6 +6,8 @@ import * as pdfjsWorker from "pdfjs-dist/build/pdf.worker.mjs";
 import IconXCircleFilled from "@icons/x-circle-filled.svg?component";
 import IconCaretLeftFilled from "@icons/caret-left-filled.svg?component";
 import IconCaretRightFilled from "@icons/caret-right-filled.svg?component";
+import IconZoomOut from "@icons/zoom-out.svg?component";
+import IconZoomIn from "@icons/zoom-in.svg?component";
 
 const emit = defineEmits(["close"]);
 const page = defineModel("page"); // eslint-disable-line
@@ -44,6 +46,7 @@ const $textLayerDiv = ref(null);
 const isPageInputFocus = ref(false);
 const isZoomInputFocus = ref(false);
 const zoomValue = ref(props.defaultZoom);
+const scaleFactor = 0.25;
 
 let initialPinchDistance = null;
 let lastPinchScale = 1;
@@ -184,7 +187,6 @@ const onWheel = (event) => {
 
 	const deltaY = event.deltaY;
 	const sign = Math.sign(-deltaY);
-	const scaleFactor = 0.25;
 	const newZoom = Math.round((currentPdf.zoom + sign * scaleFactor) * 100);
 
 	const minZoom = parseInt($zoomInput.value.min);
@@ -268,7 +270,7 @@ const getDistance = (touch1, touch2) => {
 			class="fixed bottom-0 left-0 right-0 z-50 h-16 w-screen bg-[#2d2d2d] px-4 text-skin-white sm:px-8"
 		>
 			<ul class="flex h-full w-full list-none items-center justify-between">
-				<li class="flex grow basis-0 items-center">
+				<li class="flex basis-0 items-center xs:grow">
 					<button @click="emit('close')">
 						<IconXCircleFilled
 							class="h-7 w-7 fill-skin-white hover:fill-skin-danger"
@@ -315,11 +317,15 @@ const getDistance = (touch1, touch2) => {
 				</li>
 
 				<li
-					class="flex grow basis-0 items-end justify-end sm:items-center max-sm:hidden"
+					class="flex basis-0 items-center justify-end space-x-1 xs:grow xs:space-x-2"
 				>
+					<IconZoomOut
+						class="h-7 w-7 cursor-pointer"
+						@click="changeZoom(zoomValue - scaleFactor * 100)"
+					/>
 					<span
 						ref="$zoomSpan"
-						class="text-xs sm:p-2.5 sm:text-sm"
+						class="py-2.5 text-sm"
 					>
 						{{ defaultZoom }}%
 					</span>
@@ -330,10 +336,14 @@ const getDistance = (touch1, touch2) => {
 						min="25"
 						max="400"
 						step="25"
-						class="text-center"
+						class="text-center max-md:hidden"
 						@input="changeZoom($event.target.value)"
 						@focusin="isZoomInputFocus = true"
 						@focusout="isZoomInputFocus = false"
+					/>
+					<IconZoomIn
+						class="h-7 w-7 cursor-pointer"
+						@click="changeZoom(zoomValue + scaleFactor * 100)"
 					/>
 				</li>
 			</ul>
