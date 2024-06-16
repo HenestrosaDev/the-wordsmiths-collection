@@ -19,7 +19,7 @@
       height="156"
     >
     <h1 align="center">The Wordsmith's Collection</h1>
-    <p align="center">A website featuring a curated selection of the most important literary works in history.</p>
+    <p align="center">A website with a SaaS model that allows users to access a curated library of the most important literary works in history.</p>
     <p>
       <a href="https://github.com/HenestrosaDev/the-wordsmiths-collection/stargazers">
         <img 
@@ -70,17 +70,18 @@
   </p>
 </div>
 
-![Hero](https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/en/main-mockup.jpg)
+[![Presentation video](/docs/common/youtube-thumbnail.png)](https://youtu.be/nN5XyJb1UYE)
+>Video in Spanish with English subtitles explaining the main features of the website.
 
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
 
 - [About the Project](#about-the-project)
+  - [Built With](#built-with)
   - [Entity-Relationship Model](#entity-relationship-model)
   - [Relational Model](#relational-model)
   - [Use Cases](#use-cases)
-  - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Steps](#steps)
@@ -92,23 +93,20 @@
 
 ## About the Project
 
-[![Presentation video](/docs/common/youtube-thumbnail.png)](https://youtu.be/nN5XyJb1UYE)
->Video in Spanish with English subtitles explaining the main features of the website.
+**The Wordsmith's Collection** is a subscription-based website (SaaS) that allows users to access a curated library of the most important literary works in history. Subscribed users will be able to read and review the books available for their subscription plan. Each book, genre and author has detailed descriptions to provide synopsis, subject matter and bibliography information, respectively.
 
-**The Wordsmith's Collection** consists of a website with a subscription model (SaaS) that allows users to access a curated library of the most important literary works in history. They will be able to read the books on the site, as well as search and filter by genre and author. Each book, genre and author will have a description to get more insight into their bibliography and synopsis, respectively.
+In order to access the service, users must register and enter a credit card for payment. Note that **no payments are actually made**, as the site only verifies that the credit card is valid. To actually use this feature, you should implement a payment gateway provider such as Redsys or Stripe.
 
-In order to access the service, users must register and enter a credit card for payment. Note that no payments are actually made, as the site only verifies that the credit card is valid. To actually use this feature, you should implement a payment gateway provider such as Redsys or Stripe.
+There are two subscription plans:
 
-There are two types of subscription:
-
-- **Basic**: The subscriber can read all books except those marked **PREMIUM**.
-- **Premium**: The subscriber can read the entire available library, including **PREMIUM** books.
+- **Basic**: Can read and review all books except those marked **Premium**.
+- **Premium**: Can read and review the entire library, including **Premium** books.
 
 The website has three types of users:
 
-- **Visitor**: A user who visits the site. Cannot read books, but can see the available library and reviews.
+- **Non-subscriber visitor**: Cannot read books, but can see the available library and reviews.
 - **Subscriber**: Registered user who pays a monthly/annual fee to read books. Can be **Basic** or **Premium**.
-- **Administrator**: An existing user who, in addition to performing the same operations as a subscriber, can add, edit, and delete books at will.
+- **Administrator**: A user who has all the features of a subscriber plus the ability to add, edit, and delete books, genres, and authors. They can also edit and delete users, and delete reviews.
 
 <details>
   <summary>Screenshots</summary>
@@ -302,7 +300,7 @@ Ensure you have PHP, Git, Composer, npm, and Laravel installed on your local mac
    ```shell
    cp .env.example .env
    ```
-   If necessary, you can configure it by setting the correct configuration for the database.<br>
+   Edit it to set the correct configuration for your database.<br>
    <br>
 6. Generate an application key, required for security. Generate it using Artisan:
    ```shell
