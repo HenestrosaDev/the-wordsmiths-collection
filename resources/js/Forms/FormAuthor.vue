@@ -190,7 +190,7 @@ const submitForm = () => {
 				@click="form.reset()"
 			>
 				<IconReset class="mr-1 h-6 w-6" />
-				{{ trans("reset") }}
+				{{ trans("common.action.reset") }}
 			</button>
 
 			<button
