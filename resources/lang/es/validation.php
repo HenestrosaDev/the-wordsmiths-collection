@@ -197,6 +197,42 @@ return [
     |
     */
 
-	'attributes' => [],
+	'attributes' => [
+		// Author
+		'first_name' => 'nombre',
+		'last_name' => 'apellidos',
+		'birth_date' => 'fecha de nacimiento',
+		'death_date' => 'fecha de fallecimiento',
+		'description' => 'descripción',
+		'portrait_file' => 'retrato del autor',
+		// Book review
+		'rating' => 'puntuación',
+		'review_text' => 'reseña',
+		// Book
+		'isbn' => 'ISBN',
+		'title' => 'título',
+		'language' => 'idioma',
+		'page_count' => 'número de páginas',
+		'year' => 'año',
+		'is_premium' => '¿Es Premium?',
+		'book_file' => 'archivo del libro',
+		'cover_file' => 'archivo de la portada',
+		'authors_id' => 'autores',
+		'genres_id' => 'géneros',
+		// User
+		'name' => 'nombre',
+		'subscription_plan_id' => 'plan de suscripción',
+		'status' => 'estado',
+		'end_date' => 'fecha de fin',
+		'username' => 'nombre de usuario',
+		'password' => 'contraseña',
+		'role_id' => 'rol',
+		// Payment
+		'cardholder_name' => 'titular de la tarjeta',
+		'card_number' => 'número de la tarjeta',
+		'expiration_year' => 'año de expiración',
+		'expiration_month' => 'mes de expiración',
+		'cvc' => 'CVC',
+	],
 
 ];
