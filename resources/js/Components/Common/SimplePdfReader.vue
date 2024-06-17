@@ -180,8 +180,8 @@ const changeZoom = (newValue) => {
 
 	if (currentPdf.fileData && isNewZoomInRange) {
 		$zoomSpan.value.innerHTML = `${newValue}%`;
-		currentPdf.zoom = parseInt(newValue) / 100;
-		zoomValue.value = newValue;
+		zoomValue.value = parseInt(newValue);
+		currentPdf.zoom = zoomValue.value / 100;
 		renderPage(currentPdf.currentPage);
 	}
 };
