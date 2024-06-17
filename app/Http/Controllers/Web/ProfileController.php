@@ -80,6 +80,12 @@ class ProfileController extends Controller
 
 		Auth::logout();
 
+        $user->subscription()->delete();
+        $user->creditCard()->delete();
+        $user->bookReviews()->delete();
+        $user->role()->dissociate();
+        $user->bookmarks()->delete();
+        
 		$user->delete();
 
 		$request->session()->invalidate();
