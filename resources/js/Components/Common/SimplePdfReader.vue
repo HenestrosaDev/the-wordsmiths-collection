@@ -23,6 +23,21 @@ const props = defineProps({
 		required: false,
 		default: 150,
 	},
+	minZoom: {
+		type: Number,
+		required: false,
+		default: 25,
+	},
+	maxZoom: {
+		type: Number,
+		required: false,
+		default: 400,
+	},
+	stepZoom: {
+		type: Number,
+		required: false,
+		default: 25,
+	},
 	shouldZoomOnWheel: {
 		type: Boolean,
 		required: false,
@@ -160,10 +175,13 @@ const goToPreviousPage = () => {
 };
 
 const changeZoom = (newValue) => {
-	if (currentPdf.fileData) {
+	const isNewZoomInRange =
+		newValue >= props.minZoom && newValue <= props.maxZoom;
+
+	if (currentPdf.fileData && isNewZoomInRange) {
 		$zoomSpan.value.innerHTML = `${newValue}%`;
-		currentPdf.zoom = parseInt(newValue) / 100;
-		zoomValue.value = newValue;
+		zoomValue.value = parseInt(newValue);
+		currentPdf.zoom = zoomValue.value / 100;
 		renderPage(currentPdf.currentPage);
 	}
 };
@@ -334,9 +352,9 @@ const getDistance = (touch1, touch2) => {
 						ref="$zoomInput"
 						v-model="zoomValue"
 						type="range"
-						min="25"
-						max="400"
-						step="25"
+						:min="minZoom"
+						:max="maxZoom"
+						:step="stepZoom"
 						class="text-center max-md:hidden"
 						@input="changeZoom($event.target.value)"
 						@focusin="isZoomInputFocus = true"
