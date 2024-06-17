@@ -12,6 +12,7 @@ on:
       - 'lang/**'
       - 'public/**'
       - 'resources/**'
+      - 'routes/**'
       - 'tests/**'
 jobs:
   deploy:
