@@ -98,7 +98,7 @@ const proratedFinalPrice = Math.round(
 			</p>
 		</div>
 
-		<div class="sm:flex w-fit space-x-3">
+		<div class="sm:flex max-sm:space-y-2 w-fit sm:space-x-3">
 			<button
 				v-if="isSubscriptionActive"
 				class="button"
