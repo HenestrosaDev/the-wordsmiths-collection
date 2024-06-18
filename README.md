@@ -323,6 +323,7 @@ You can enable hot refresh with Vite by running the command `npm run dev`. Note 
 
 ## Notes
 
+- Use a real email address when creating an account, as a verification email will be sent to proceed with the payment.
 - Use a [credit card generator](https://www.creditcardvalidator.org/generator) to fake a payment.
 
 <!-- ROADMAP -->
