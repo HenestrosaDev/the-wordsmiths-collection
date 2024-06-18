@@ -62,11 +62,11 @@
     </a> 
     · 
     <a href="https://github.com/HenestrosaDev/the-wordsmiths-collection/discussions">
-      Tengo Una Pregunta
+      Realizar Pregunta
     </a>
   </p>
   <p>
-    <a href="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/README.md/">🇪🇸 Español</a>🇬🇧 English</a> | 🇪🇸 Español
+    <a href="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/README.md/">🇬🇧 English</a> | 🇪🇸 Español
   </p>
 </div>
 
@@ -79,7 +79,7 @@
 
 - [Sobre el Proyecto](#sobre-el-proyecto)
   - [Hecho Con](#hecho-con)
-  - [Modelo Entidad-Relación](#modelo-entidad-relacion)
+  - [Modelo Entidad-Relación](#modelo-entidad-relación)
   - [Modelo Relacional](#modelo-relacional)
   - [Casos de Uso](#casos-de-uso)
 - [Primeros Pasos](#primeros-pasos)
@@ -206,15 +206,15 @@ El sitio web tiene tres tipos de usuarios:
 <div align="center">
   <picture>
     <source 
-      srcset="docs/es/light/entity-relationship-diagram.svg"
+      srcset="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/es/light/entity-relationship-diagram.svg"
       media="(prefers-color-scheme: light)"
     />
     <source 
-      srcset="docs/es/dark/entity-relationship-diagram.svg"
+      srcset="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/es/dark/entity-relationship-diagram.svg"
       media="(prefers-color-scheme: dark)"
     />
     <img 
-      src="docs/es/light/entity-relationship-diagram.svg"
+      src="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/es/light/entity-relationship-diagram.svg"
       alt="Modelo Entidad-Relación"
     >
   </picture>
@@ -227,15 +227,15 @@ El sitio web tiene tres tipos de usuarios:
 <div align="center">
   <picture>
     <source 
-      srcset="docs/common/light/relational-model.svg"
+      srcset="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/common/light/relational-model.svg"
       media="(prefers-color-scheme: light)"
     />
     <source 
-      srcset="docs/common/dark/relational-model.svg"
+      srcset="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/common/dark/relational-model.svg"
       media="(prefers-color-scheme: dark)"
     />
     <img 
-      src="docs/common/light/relational-model.svg"
+      src="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/common/light/relational-model.svg"
       alt="Modelo Relacional"
     >
   </picture>
@@ -248,15 +248,15 @@ El sitio web tiene tres tipos de usuarios:
 <div align="center">
   <picture>
     <source 
-      srcset="docs/es/light/use-cases.svg"
+      srcset="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/es/light/use-cases.svg"
       media="(prefers-color-scheme: light)"
     />
     <source 
-      srcset="docs/es/dark/use-cases.svg"
+      srcset="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/es/dark/use-cases.svg"
       media="(prefers-color-scheme: dark)"
     />
     <img 
-      src="docs/es/light/use-cases.svg"
+      src="https://github.com/HenestrosaDev/the-wordsmiths-collection/blob/main/docs/es/light/use-cases.svg"
       alt="Casos de Uso"
     >
   </picture>
@@ -323,6 +323,7 @@ Puedes habilitar **hot refresh** con Vite ejecutando el comando `npm run dev`. T
 
 ## Notas
 
+- Usa un correo real al crear una cuenta, ya que se mandará un correo de verificación para poder proceder con el pago.
 - Usa un [generador de tarjetas de crédito](https://www.creditcardvalidator.org/generator) para fingir un pago.
 
 <!-- ROADMAP -->
