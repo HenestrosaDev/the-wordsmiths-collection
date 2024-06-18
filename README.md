@@ -86,6 +86,7 @@
   - [Prerequisites](#prerequisites)
   - [Steps](#steps)
 - [Notes](#notes)
+- [Roadmap](#roadmap)
 - [Authors](#authors)
 - [License](#license)
 
@@ -328,13 +329,22 @@ You can enable hot refresh with Vite by running the command `npm run dev`. Note 
 
 <!-- ROADMAP -->
 
-<!--
 ## Roadmap
 
-- [ ] To do
+Improvements that can be made to the project:
+
+- [ ] Support `.mobi` and `.epub` files and create a viewer for them for a more satisfying experience on mobile devices.
+- [ ] Add a `User/Detail.vue` page to view data such as their recent activity, ratings and comments from other users.
+- [ ] Add support for half scores (0.5, 1.5, 2.5, 3.5 and 4.5).
+- [ ] Allow users to upload a profile picture and change it.
+- [ ] Add the option to add favorite books, genres, authors, and reviews.
+- [ ] Add a dialog when hovering a book to show more information about it, similar to [Filmin](https://filmin.es).
+- [ ] Make this a real product by using a payment gateway such as Redsys or Stripe.
+- [ ] Add more subscription plans to support more time at a reduced price (e.g., 6 months of Premium subscription for 34,99€).
+- [ ] Add logic and missing services to control recurring payment.
+- [ ] Extend the subscription end date if the recurring payment is successful, or cancel if the payment cannot be made.
 
 You can propose a new feature creating an [issue](https://github.com/HenestrosaDev/the-wordsmiths-collection/new/choose).
--->
 
 <!-- AUTHORS -->
 

@@ -86,6 +86,7 @@
   - [Requisitos previos](#requisitos-previos)
   - [Pasos](#pasos)
 - [Notas](#notas)
+- [Hoja de Ruta](#hoja-de-ruta)
 - [Autores](#autores)
 - [Licencia](#licencia)
 
@@ -328,13 +329,20 @@ Puedes habilitar **hot refresh** con Vite ejecutando el comando `npm run dev`. T
 
 <!-- ROADMAP -->
 
-<!--
-## Roadmap
+## Hoja de Ruta
 
-- [ ] To do
+- [ ] Soportar archivos `.mobi` y `.epub` y crea un visor para ellos para una experiencia más satisfactoria en dispositivos móviles.
+- [ ] Añadir una página `User/Detail.vue` para ver datos como la actividad reciente, puntuaciones y comentarios de otros usuarios.
+- [ ] Añadir soporte para medias puntuaciones (0,5, 1,5, 2,5, 3,5 y 4,5).
+- [ ] Permitir a los usuarios subir una foto de perfil y cambiarla.
+- [ ] Añadir la opción de añadir libros favoritos, géneros, autores y reseñas.
+- [ ] Añadir un diálogo al pasar el ratón sobre un libro para mostrar más información sobre él, similar a [Filmin](https://filmin.es).
+- [ ] Hacer de esto un producto real mediante el uso de una pasarela de pago como Redsys o Stripe.
+- [ ] Añadir más planes de suscripción para soportar más tiempo a un precio reducido (por ejemplo, 6 meses de suscripción Premium por 34,99€).
+- [ ] Añadir la lógica y los servicios faltantes para controlar el pago recurrente.
+- [ ] Extender la fecha de finalización de la suscripción si el pago recurrente se realiza correctamente, o cancelar si el pago no se puede realizar.
 
-You can propose a new feature creating an [issue](https://github.com/HenestrosaDev/the-wordsmiths-collection/new/choose).
--->
+Puedes proponer una nueva función creando una [incidencia](https://github.com/HenestrosaDev/the-wordsmiths-collection/new/choose).
 
 <!-- AUTHORS -->
 
