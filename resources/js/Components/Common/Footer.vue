@@ -9,14 +9,9 @@ const socials = [
 		iconName: "brand-github.svg",
 	},
 	{
-		title: "X profile",
-		link: "/#",
-		iconName: "brand-x.svg",
-	},
-	{
-		title: "Instagram",
-		link: "/#",
-		iconName: "brand-instagram.svg",
+		title: "LinkedIn",
+		link: "https://www.linkedin.com/in/henestrosadev/",
+		iconName: "brand-linkedin.svg",
 	},
 	{
 		title: "Mail",
