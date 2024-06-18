@@ -76,6 +76,7 @@ const closeModal = () => {
 				input-type="password"
 				input-autocomplete="off"
 				:error-message="form.errors.password"
+				is-required
 				@keyup.enter="deleteUser"
 			/>
 
