@@ -187,7 +187,8 @@ The website has three types of users:
 - [TailwindCSS](https://tailwindcss.com/docs/guides/laravel): CSS framework.
 - [Vue.js 3](https://vuejs.org/): JavaScript framework.
 - [Inertia.js](https://inertiajs.com/): Enables the creation of fully client-side rendered, single-page applications without the complexity of modern SPAs.
-- [drawio.com](https://drawio.com): Tool used to create the diagrams.
+- [drawio.com](https://drawio.com): Tool used to create the entity-relationship model diagrams.
+- [dbdiagram.io](https://dbdiagram.io/): Tool used to create the relational model diagrams.
 - [Flowbite](https://flowbite.com): Open-source UI component library built on top of Tailwind CSS. Used for Nav dropdowns and tabs.
 - [PDF.js](https://mozilla.github.io/pdf.js/): Library for rendering PDFs.
 - [Spatie/laravel-medialibrary](https://spatie.be/docs/laravel-medialibrary/v11/introduction): Associates files with Eloquent models.
